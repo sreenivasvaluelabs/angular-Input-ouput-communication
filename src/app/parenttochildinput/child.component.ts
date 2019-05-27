@@ -4,10 +4,9 @@ import { Component, Input } from '@angular/core';
   selector: 'input-app-child',
   template: `
       Say {{ message }}
-  `,
-  styleUrls: ['./child.component.css']
+  `
 })
-export class ChildComponent {
+export class InputChildComponent {
 
   @Input() childMessage: string;
 

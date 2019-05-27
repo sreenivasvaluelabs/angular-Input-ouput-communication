@@ -4,10 +4,9 @@ import { Component } from '@angular/core';
   selector: 'input-app-parent',
   template: `
     <input-app-child [childMessage]="parentMessage"></input-app-child>
-  `,
-  styleUrls: ['./parent.component.css']
+  `
 })
-export class ParentComponent{
+export class InputParentComponent{
   parentMessage = "message from parent"
   constructor() { }
 }

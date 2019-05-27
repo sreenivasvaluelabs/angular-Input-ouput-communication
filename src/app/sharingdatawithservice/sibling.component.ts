@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { ShareDataService } from "../data.service";
+import { ShareDataService } from "./data.service";
 
 @Component({
   selector: 'sharedataservice-app-sibling',
   template: `
     {{message}}
     <button (click)="newMessage()">New Message</button>
-  `,
-  styleUrls: ['./sibling.component.css']
+  `
 })
-export class SiblingComponent implements OnInit {
+export class SharingDataWithServiceSiblingComponent implements OnInit {
 
   message:string;
 

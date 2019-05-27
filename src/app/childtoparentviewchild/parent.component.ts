@@ -1,17 +1,16 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
-import { ChildComponent } from "../child/child.component";
+import { ViewchildChildComponent } from "./child.component";
 
 @Component({
   selector: 'viewchild-app-parent',
   template: `
     Message: {{ message }}
     <viewchild-app-child></viewchild-app-child>
-  `,
-  styleUrls: ['./parent.component.css']
+  `
 })
-export class ParentComponent implements AfterViewInit {
+export class ViewchildParentComponent implements AfterViewInit {
 
-  @ViewChild(ChildComponent) child;
+  @ViewChild(ViewchildChildComponent) child;
 
   constructor() { }
 

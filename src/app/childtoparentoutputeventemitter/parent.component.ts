@@ -5,10 +5,9 @@ import { Component } from '@angular/core';
   template: `
     Message: {{message}}
     <outputeventemiter-app-child (messageEvent)="receiveMessage($event)"></outputeventemiter-app-child>
-  `,
-  styleUrls: ['./parent.component.css']
+  `
 })
-export class ParentComponent {
+export class OutputEmitParentComponent {
 
   constructor() { }
 

@@ -4,10 +4,9 @@ import { Component, Output, EventEmitter } from '@angular/core';
   selector: 'outputeventemiter-app-child',
   template: `
       <button (click)="sendMessage()">Send Message</button>
-  `,
-  styleUrls: ['./child.component.css']
+  `
 })
-export class ChildComponent {
+export class OutputEmitChildComponent {
 
   message: string = "Hola Mundo!"
 
