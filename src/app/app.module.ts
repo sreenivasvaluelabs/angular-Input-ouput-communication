@@ -47,10 +47,10 @@ import {Posts2Component } from
 import {Posts3Component } from 
 './passasyncdata/posts-3.component';
 import { HttpModule } from '@angular/http';
-
+ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ,HttpModule],
+  imports:      [ BrowserModule, FormsModule ,HttpModule,HttpClientModule],
   declarations: [ AppComponent, HelloComponent, ListPostComponent,AddPostComponent, ServiceListPostComponent,ServiceAddPostComponent, 
   InputParentComponent, InputChildComponent
    ,ViewchildParentComponent,

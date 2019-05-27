@@ -37,7 +37,7 @@ export class Posts3Component implements OnInit {
 
     ngOnInit() {
         this._data
-            .takeWhile(() => !this.groupPosts) // unsubscribe once groupPosts has value
+            //.takeWhile(() => !this.groupPosts) // unsubscribe once groupPosts has value
             .subscribe(x => {
                 this.groupPosts = this.groupByCategory(this.data);
             });

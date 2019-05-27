@@ -28,12 +28,15 @@ export class BloggerComponent implements OnInit {
     constructor(private _http: Http) { }
 
     ngOnInit() { 
+      
+      debugger;
         this.getPostsByBlogger()
             .subscribe(x => this.posts = x);
     }
 
     getPostsByBlogger() {
-        const url = './mock-posts.json';
+        const url = 'https://jsonplaceholder.typicode.com/todos';
+        //console.log(this._http.get(url).pipe());
         return this._http.get(url).pipe(map(x => x.json()));
             
 
