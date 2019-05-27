@@ -4,7 +4,7 @@ import { ShareDataService } from "./data.service";
 @Component({
   selector: 'sharedataservice-app-parent',
   template: `
-    {{message}}
+    parent component:{{message}} End
   `
 })
 export class SharingDataWithServiceParentComponent implements OnInit {

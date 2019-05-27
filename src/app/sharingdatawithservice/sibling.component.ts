@@ -4,7 +4,7 @@ import { ShareDataService } from "./data.service";
 @Component({
   selector: 'sharedataservice-app-sibling',
   template: `
-    {{message}}
+   <br>Sibling component {{message}}
     <button (click)="newMessage()">New Message</button>
   `
 })

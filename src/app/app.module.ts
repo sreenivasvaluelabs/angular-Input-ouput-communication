@@ -34,6 +34,8 @@ import { SharingDataWithServiceSiblingComponent } from
 import { SharingDataWithServiceParentComponent } from 
 './sharingdatawithservice/parent.component';
 
+import {ShareDataService } from './sharingdatawithservice/data.service';
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent, ListPostComponent,AddPostComponent, ServiceListPostComponent,ServiceAddPostComponent, 
@@ -42,6 +44,7 @@ import { SharingDataWithServiceParentComponent } from
     ViewchildChildComponent
   , OutputEmitParentComponent, OutputEmitChildComponent, SharingDataWithServiceSiblingComponent, SharingDataWithServiceParentComponent
   ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [ShareDataService]
 })
 export class AppModule { }
