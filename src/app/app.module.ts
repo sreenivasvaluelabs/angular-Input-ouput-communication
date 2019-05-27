@@ -34,15 +34,33 @@ import { SharingDataWithServiceSiblingComponent } from
 import { SharingDataWithServiceParentComponent } from 
 './sharingdatawithservice/parent.component';
 
-import {ShareDataService } from './sharingdatawithservice/data.service';
+import {ShareDataService } from 
+'./sharingdatawithservice/data.service';
+
+
+import {BloggerComponent } from 
+'./passasyncdata/blogger.component';
+import {Posts1Component } from 
+'./passasyncdata/posts-1.component';
+import {Posts2Component } from 
+'./passasyncdata/posts-2.component';
+import {Posts3Component } from 
+'./passasyncdata/posts-3.component';
+import { HttpModule } from '@angular/http';
+
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule ,HttpModule],
   declarations: [ AppComponent, HelloComponent, ListPostComponent,AddPostComponent, ServiceListPostComponent,ServiceAddPostComponent, 
   InputParentComponent, InputChildComponent
    ,ViewchildParentComponent,
     ViewchildChildComponent
   , OutputEmitParentComponent, OutputEmitChildComponent, SharingDataWithServiceSiblingComponent, SharingDataWithServiceParentComponent
+  ,BloggerComponent
+  ,Posts1Component
+  ,Posts2Component
+  ,Posts3Component
+
   ],
   bootstrap:    [ AppComponent ],
   providers: [ShareDataService]
