@@ -7,9 +7,14 @@ import { HelloComponent } from './hello.component';
 import { ListPostComponent } from './listpost/listpost.component';
 import { AddPostComponent } from './addpost/addpost.component';
 
+
+import { ServiceListPostComponent } from './servicelistpost/servicelistpost.component';
+import { ServiceAddPostComponent } from './serviceaddpost/serviceaddpost.component';
+
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, ListPostComponent,AddPostComponent ],
+  declarations: [ AppComponent, HelloComponent, ListPostComponent,AddPostComponent, ServiceListPostComponent,ServiceAddPostComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
