@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'input-app-child',
   template: `
-      Say {{ message }}
+      Child received message from parent: {{ childMessage }}
   `
 })
 export class InputChildComponent {
